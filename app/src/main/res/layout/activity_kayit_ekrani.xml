@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginManager.RegisterScreen">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="236dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginBottom="24dp"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/kayit_ekrani"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/etAdSoyad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/etAdSoyad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:hint="@string/ad_soyad"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etEmail"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="@string/e_ma_l"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etSifre"
+        app:layout_constraintStart_toStartOf="@+id/etAdSoyad"
+        app:layout_constraintTop_toBottomOf="@+id/etAdSoyad"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/etSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/fre"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/etSifreTekrar"
+        app:layout_constraintStart_toStartOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etSifreTekrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="@string/fre_tekrar"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/etCepTel"
+        app:layout_constraintStart_toStartOf="@+id/etSifre"
+        app:layout_constraintTop_toBottomOf="@+id/etSifre" />
+
+    <EditText
+        android:id="@+id/etCepTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:hint="@string/cep_telefonu"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnKayıtOl"
+        app:layout_constraintStart_toStartOf="@+id/etSifreTekrar"
+        app:layout_constraintTop_toBottomOf="@+id/etSifreTekrar" />
+
+    <Button
+        android:id="@+id/btnKayıtOl"
+        android:layout_width="112dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="173dp"
+        android:text="@string/kayit_ol"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCepTel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdvertManager.AddAdvert">
+
+    <Spinner
+        android:id="@+id/spnİlce"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/spnKat"
+        app:layout_constraintEnd_toEndOf="@+id/spnKat"
+        app:layout_constraintStart_toStartOf="@+id/spnKat"
+        app:layout_constraintTop_toBottomOf="@+id/spnSehir" />
+
+    <EditText
+        android:id="@+id/etBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="@string/ba_lik"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etDaireOda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgResim" />
+
+    <Spinner
+        android:id="@+id/spnSehir"
+        android:layout_width="194dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/spnİlce"
+        app:layout_constraintEnd_toEndOf="@+id/etDaireOda"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spnİlce"
+        app:layout_constraintTop_toBottomOf="@+id/etUcret" />
+
+    <EditText
+        android:id="@+id/etAdres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/adres"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etUcret"
+        app:layout_constraintStart_toStartOf="@+id/etBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/etDaireOda" />
+
+    <EditText
+        android:id="@+id/etUcret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="@string/ucret"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/spnSehir"
+        app:layout_constraintStart_toStartOf="@+id/etAdres"
+        app:layout_constraintTop_toBottomOf="@+id/etAdres" />
+
+    <ImageView
+        android:id="@+id/imgResim"
+        android:layout_width="219dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="selectImage"
+        app:layout_constraintBottom_toTopOf="@+id/etBaslik"
+        app:layout_constraintEnd_toEndOf="@+id/etBaslik"
+        app:layout_constraintStart_toStartOf="@+id/etBaslik"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add" />
+
+    <Spinner
+        android:id="@+id/spnKat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/spnOdaSayisi"
+        app:layout_constraintEnd_toEndOf="@+id/spnOdaSayisi"
+        app:layout_constraintStart_toStartOf="@+id/spnOdaSayisi"
+        app:layout_constraintTop_toBottomOf="@+id/spnİlce" />
+
+    <EditText
+        android:id="@+id/etDaireOda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="@string/da_re_oda"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etAdres"
+        app:layout_constraintEnd_toEndOf="@+id/etAdres"
+        app:layout_constraintTop_toBottomOf="@+id/etBaslik" />
+
+    <Button
+        android:id="@+id/btnKaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:text="@string/kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnOdaSayisi" />
+
+    <Spinner
+        android:id="@+id/spnOdaSayisi"
+        android:layout_width="195dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnKaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnKat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

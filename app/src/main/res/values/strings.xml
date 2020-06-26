@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">183311027_MAkgöz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_bar_text">𝚂𝚎𝚑𝚒𝚛/İ𝚕𝚌𝚎/𝙼𝚞𝚕𝚔𝚝𝚒𝚙𝚒/𝙺𝚊𝚝</string>
+    <string name="g_r_ekrani">GİRİŞ EKRANI</string>
+    <string name="e_ma_l_kayit">E-MAİL</string>
+    <string name="fre_kayit">ŞİFRE</string>
+    <string name="g_r">GİRİŞ</string>
+    <string name="kayit_ol_kayit">KAYIT OL</string>
+    <string name="kayit_ekrani">KAYIT EKRANI</string>
+    <string name="ad_soyad">AD-SOYAD</string>
+    <string name="e_ma_l_giris">E-MAİL</string>
+    <string name="fre">ŞİFRE</string>
+    <string name="fre_tekrar">ŞİFRE TEKRAR</string>
+    <string name="cep_telefonu">CEP TELEFONU</string>
+    <string name="kayit_ol">KAYIT OL</string>
+    <string name="ba_lik">BAŞLIK</string>
+    <string name="adres">ADRES</string>
+    <string name="ucret">UCRET</string>
+    <string name="da_re_oda">DAİRE/ODA</string>
+    <string name="kaydet">kaydet</string>
+    <string name="yen_ba_lik">YENİ BAŞLIK</string>
+    <string name="yen_adres">YENİ ADRES</string>
+    <string name="yen_ucret">YENİ UCRET</string>
+    <string name="yen_da_re_oda">YENİ DAİRE/ODA</string>
+    <string name="g_ncele">güncele</string>
+    <string name="ad_soyad_profile">AD/SOYAD</string>
+    <string name="_profile">ŞİFRE</string>
+    <string name="guncelle_profile">Guncelle</string>
+    <string name="telefon">TELEFON</string>
+    <string name="e_ma_l">E-MAİL</string>
+    <string name="textview_1">TextView</string>
+    <string name="textview_2">TextView</string>
+    <string name="textview_3">TextView</string>
+    <string name="kat">KAT</string>
+</resources>

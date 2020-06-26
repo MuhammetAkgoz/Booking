@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdvertManager.UpdateAdvert">
+
+    <Spinner
+        android:id="@+id/spnYeniİlce"
+        android:layout_width="189dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/spnYeniOdaSayisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnYeniSehir" />
+
+    <EditText
+        android:id="@+id/etYeniBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="@string/yen_ba_lik"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etYeniDaireOda"
+        app:layout_constraintStart_toStartOf="@+id/imgYeniResim"
+        app:layout_constraintTop_toBottomOf="@+id/imgYeniResim" />
+
+    <Spinner
+        android:id="@+id/spnYeniSehir"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/spnYeniİlce"
+        app:layout_constraintEnd_toEndOf="@+id/etYeniUcret"
+        app:layout_constraintStart_toStartOf="@+id/etYeniUcret"
+        app:layout_constraintTop_toBottomOf="@+id/etYeniUcret" />
+
+    <EditText
+        android:id="@+id/etYeniAdres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:ems="10"
+        android:hint="@string/yen_adres"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etYeniUcret"
+        app:layout_constraintStart_toStartOf="@+id/etYeniDaireOda"
+        app:layout_constraintTop_toBottomOf="@+id/etYeniDaireOda" />
+
+    <EditText
+        android:id="@+id/etYeniUcret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/yen_ucret"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/spnYeniSehir"
+        app:layout_constraintStart_toStartOf="@+id/etYeniAdres"
+        app:layout_constraintTop_toBottomOf="@+id/etYeniAdres" />
+
+    <ImageView
+        android:id="@+id/imgYeniResim"
+        android:layout_width="218dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="selectedImage"
+        app:layout_constraintBottom_toTopOf="@+id/etYeniBaslik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add" />
+
+    <Spinner
+        android:id="@+id/spnYeniKat"
+        android:layout_width="189dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spnYeniOdaSayisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnYeniSehir" />
+
+    <EditText
+        android:id="@+id/etYeniDaireOda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="@string/yen_da_re_oda"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etYeniAdres"
+        app:layout_constraintEnd_toEndOf="@+id/etYeniBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/etYeniBaslik" />
+
+    <Button
+        android:id="@+id/btnGuncelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:text="@string/g_ncele"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnYeniOdaSayisi" />
+
+    <Spinner
+        android:id="@+id/spnYeniOdaSayisi"
+        android:layout_width="189dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuncelle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnYeniİlce" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

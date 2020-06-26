@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sehirler">
+        <item>Ankara</item>
+        <item>İstanbul</item>
+        <item>Konya</item>
+    </string-array>
+
+    <string-array name="Ankİlceler">
+        <item>Anıttepe</item>
+        <item>Çankaya</item>
+        <item>Elmadağ</item>
+    </string-array>
+
+    <string-array name="İstİlceler">
+        <item>Kadiköy</item>
+        <item>Beşiktaş</item>
+        <item>Bağcılar</item>
+    </string-array>
+
+    <string-array name="Konİlceler">
+        <item>Merkez</item>
+        <item>Bosna</item>
+        <item>Meram</item>
+    </string-array>
+
+    <string-array name="sayilar">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+
+
+</resources>
